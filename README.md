@@ -1,8 +1,9 @@
-Pierre's Bakery
+## Pierre's Bakery
 
 
 A Console app that allows users to order Bread and Pastries and see the price of their order
-By Hernan Verar
+
+## By Hernan Verar
 
 
 ## Technologies Used
