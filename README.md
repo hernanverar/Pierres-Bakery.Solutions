@@ -14,7 +14,7 @@ A Console app that allows users to order Bread and Pastries and see the price of
 Welcomes user to Pierre's Bakery and prompts them to order Bread and Pastries. Once the order is confirmed the total price of the order will be displayed with the order quantities.
 Setup/Installation Requirements
 Open a terminal and clone this repository by entering into the command line:
-
+## https://github.com/hernanverar/Pierres-Bakery.Solutions
 
 In the terminal, navigate to the console application with the command:
 cd Pierres-Bakery/Bakery
