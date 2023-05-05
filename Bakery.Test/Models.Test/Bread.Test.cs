@@ -7,10 +7,22 @@ namespace Bakery.Test
   public class BreadTest
   {
     [TestMethod]
-    public void BreadConstructor_CreatesInstanceOfBread_Bread()
+    public void CalculationBread_OneBreadEqualsFive()
     {
       Bread newBread = new Bread(1);
-      Assert.AreEqual(typeof(Bread), newBread.GetType());
+      Assert.AreEqual(5, newBread.CalculationBreadPrice());
+    }
+    [TestMethod]
+    public void CalculationBread_ThreeBreadEqualsTen()
+    {
+      Bread newBread = new Bread(3);
+      Assert.AreEqual(10, newBread.CalculationBreadPrice());
+    }
+    [TestMethod]
+    public void CalculationBread_FourBreadEqualsFifteen()
+    {
+      Bread newBread = new Bread(4);
+      Assert.AreEqual(15, newBread.CalculationBreadPrice());
     }
   }
 }
