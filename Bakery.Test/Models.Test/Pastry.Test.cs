@@ -4,13 +4,13 @@ using Bakery.Models;
 namespace Bakery.Test
 {
   [TestClass]
-  public class Pastry.Test
+  public class PastryTest
   {
     [TestMethod]
-    public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
+    public void CalculationPastry_OnePastryEqualsTwo()
     {
-      PastrynewPastry = new Pastry(1);
-      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+      Pastry pastry = new Pastry(1);
+      Assert.AreEqual(2, pastry.CalculationPastryPrice());
     }
   }
 }
