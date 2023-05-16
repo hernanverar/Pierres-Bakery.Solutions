@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery.Models;
 
-namespace Bakery.Test
+namespace Bakery.Tests
 {
   [TestClass]
-  public class PastryTest
+  public class PastryTests
   {
     [TestMethod]
     public void CalculationPastry_OnePastryEqualsTwo()

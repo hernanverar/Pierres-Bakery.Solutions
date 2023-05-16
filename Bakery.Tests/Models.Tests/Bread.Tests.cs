@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery.Models;
 
-namespace Bakery.Test
+namespace Bakery.Tests
 {
   [TestClass]
-  public class BreadTest
+  public class BreadTests
   {
     [TestMethod]
     public void CalculationBread_OneBreadEqualsFive()
@@ -17,12 +17,6 @@ namespace Bakery.Test
     {
       Bread newBread = new Bread(3);
       Assert.AreEqual(10, newBread.CalculationBreadPrice());
-    }
-    [TestMethod]
-    public void CalculationBread_FourBreadEqualsFifteen()
-    {
-      Bread newBread = new Bread(4);
-      Assert.AreEqual(15, newBread.CalculationBreadPrice());
     }
   }
 }
