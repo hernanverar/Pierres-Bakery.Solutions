@@ -19,17 +19,17 @@ Open a terminal and clone this repository by entering into the command line:
 In the terminal, navigate to the console application with the command:
 cd Pierres-Bakery/Bakery
 
-To launch the application enter the following lines into the command line:
-dotnet restore
+# To launch the application enter the following lines into the command line:
+* dotnet restore
 
-then:
-dotnet build
+# then:
+* dotnet build
 
-and finally:
-dotnet run
+# finally:
+* dotnet run
 
-Known Bugs
-
+# Known Bugs
+  none
 
 License; MIT License
 
