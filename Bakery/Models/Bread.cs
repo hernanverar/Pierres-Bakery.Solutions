@@ -1,31 +1,22 @@
 using System;
 
+namespace Bakery.Models;
 
-namespace Bakery.Models
+public class Bread
 {
-  public class Bread
+  public int BreadQty { get; set; }
+  public int BreadOrderPrice { get; set; }
 
+  public Bread(int breadQtyOrdered)
   {
-    public int numLoafs { get; set; }
+    BreadQty = breadQtyOrdered;
+    BreadOrderPrice = CalcBreadOrderPrice(breadQtyOrdered);
+  }
 
-    public Bread(int bread)
-    {
-      numLoafs = bread;
-    }
-
-    public int CalculationBreadPrice() 
-    {
-      int price = 0;
-      if (numLoafs % 2 == 0)
-      {
-        price = (numLoafs / 2) * 5; 
-      }
-      else
-      {
-        price = (numLoafs / 2) * 5 + 5;
-      }
-      return price;
-    }
+  public int CalcBreadOrderPrice(int breadQtyOrdered)
+  {
+    int loafPrice = 5;
+    this.BreadOrderPrice = (breadQtyOrdered - (breadQtyOrdered/3))*loafPrice;
+    return BreadOrderPrice;
   }
 }
-
